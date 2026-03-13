@@ -216,7 +216,7 @@
 
     .button-primary {
       background: #ff5b24;
-      color: #261c00;
+      color: #f4f4f4;
     }
 
     .button-secondary {
@@ -270,7 +270,7 @@
   <main class="wrap">
     <section class="hero">
       <!-- <div class="eyebrow">🧈 Diskré leveranser siden 2011</div> -->
-      <h1 style="font-family: 'Times New Roman', Times, serif; font-style:; text-align: center; color: #f3c026;">Smørmannen</h1>
+      <h1 style="font-family: 'Times New Roman', Times, serif; text-decoration: underline; text-align: center; color: #f3c026;">Smørmannen</h1>
       <p class="sub" style="font-style: italic;">
         Premium norsk meierismør og svensk import. Jeg selger ALDRI margarin. 
       </p>
@@ -343,12 +343,12 @@
             <strong>+150 kr</strong>
           </div>
         </div>
-        <p class="fineprint">
+        <!-- <p class="fineprint">
           Byttehandel kan vurderes. Ost, bacon og andre strategiske varer prioriteres.
-        </p>
+        </p> -->
       </section>
 
-      <section class="card">
+      <!-- <section class="card">
         <h2 class="section-title">Betaling</h2>
         <div class="panel">
           <div class="line">
@@ -361,9 +361,8 @@
           </div>
         </div>
         <p class="fineprint tiny">
-          Prisendringer kan skje uten varsel ved nye markedsforstyrrelser.
         </p>
-      </section>
+      </section> -->
 
       <!-- <section class="card">
         <h2 class="section-title">Markedsrapport</h2>
@@ -384,18 +383,14 @@
     </div>
 
     <p class="footer">
-      Ikke tilknyttet TINE. Kun for festrelaterte nødformål.
+      Ikke en ekte tjeneste. Kun for festrelaterte formål.
     </p>
   </main>
 
   <script>
-    // Bytt til ditt eget nummer før publisering.
     const vippsNumber = '45418935';
 
     document.getElementById('vipps-number').textContent = vippsNumber.replace(/(\d{2})(?=\d)/g, '$1 ').trim();
-
-    // Vipps deep link. Fungerer best på mobil hvis Vipps er installert.
-    // Du kan også bytte denne til en vanlig betalingslenke hvis du har en slik.
     const vippsLink = `vipps://pay?phone=${vippsNumber}`;
     document.getElementById('vipps-link').setAttribute('href', vippsLink);
   </script>
