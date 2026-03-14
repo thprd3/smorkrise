@@ -69,7 +69,7 @@
 
     h1 {
       margin: 14px 0 8px;
-      font-size: clamp(2rem, 8vw, 3rem);
+      font-size: clamp(1.9rem, 7.7vw, 2.8rem);
       line-height: 0.95;
       letter-spacing: -0.05em;
     }
@@ -270,9 +270,9 @@
   <main class="wrap">
     <section class="hero">
       <!-- <div class="eyebrow">🧈 Diskré leveranser siden 2011</div> -->
-      <h1 style="font-family: 'Times New Roman', Times, serif; text-decoration: underline; text-align: center; color: #f3c026;">Smørmannen</h1>
+      <h1 style="font-family: 'Times New Roman', Times, serif; text-decoration: underline; text-align: center; color: #f3c026; font-size: ;">SECRET SMØRVICE</h1>
       <p class="sub" style="font-style: italic;">
-        Premium norsk meierismør og svensk import. Jeg selger ALDRI margarin. 
+        Premium norsk meierismør og svensk import. Jeg selger <span style="text-decoration: underline;">ALDRI</span> margarin. 
       </p>
     </section>
 
@@ -311,6 +311,14 @@
             <div class="price">450 kr</div>
           </article>
 
+          <article class="item" style="background-color: rgb(209, 255, 202);">
+            <div>
+              <div class="name" style="color:rgb(214, 102, 102)">🤶JULESPESIAL🤶</div>
+              <div class="meta" style="color: #1f1a17;">200 gram av nissens eget smør! Nok til en porsjon av bestemors krumkaker. Oppskrift medfølger.</div>
+            </div>
+            <div class="price">2011 kr</div>
+          </article>
+
           <!-- <article class="item">
             <div>
               <div class="name">Lurpak Premium</div>
@@ -338,10 +346,10 @@
             <span>Kjølebag</span>
             <strong>+50 kr</strong>
           </div>
-          <div class="line">
+          <!-- <div class="line">
             <span>Akutt helgeleveranse</span>
             <strong>+150 kr</strong>
-          </div>
+          </div> -->
         </div>
         <!-- <p class="fineprint">
           Byttehandel kan vurderes. Ost, bacon og andre strategiske varer prioriteres.
@@ -386,13 +394,5 @@
       Ikke en ekte tjeneste. Kun for festrelaterte formål.
     </p>
   </main>
-
-  <script>
-    const vippsNumber = '45418935';
-
-    document.getElementById('vipps-number').textContent = vippsNumber.replace(/(\d{2})(?=\d)/g, '$1 ').trim();
-    const vippsLink = `vipps://pay?phone=${vippsNumber}`;
-    document.getElementById('vipps-link').setAttribute('href', vippsLink);
-  </script>
 </body>
 </html>
